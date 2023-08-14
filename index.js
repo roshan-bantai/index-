@@ -1,4 +1,4 @@
-function onSignIn(googleUser) {
+function handleCredentialResponse(googleUser) {
   console.log("inside log in", googleUser);
   var profile = googleUser.getBasicProfile();
   $("#name").text(profile.getName());
